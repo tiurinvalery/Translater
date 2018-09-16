@@ -36,6 +36,9 @@ dependencies {
     //security
     testCompile("org.springframework.security:spring-security-test")
     compile("org.springframework.boot:spring-boot-starter-security")
+    // https://mvnrepository.com/artifact/org.eclipse.jdt.core.compiler/ecj
+    compile group: 'org.eclipse.jdt.core.compiler', name: 'ecj', version: '4.6.1'
+
 
 
 

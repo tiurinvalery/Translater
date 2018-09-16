@@ -1,5 +1,5 @@
 server:
-  port: 8084
-spring.mvc.view.prefix: /WEB-INF/views/
+  port: 8086
+spring.mvc.view.prefix: /WEB-INF/
 spring.mvc.view.suffix: .jsp
 

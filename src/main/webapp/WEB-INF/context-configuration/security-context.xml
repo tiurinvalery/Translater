@@ -19,7 +19,7 @@
 
         <form-login login-page="/login.jsp"
                     default-target-url="/control/v1/dash"
-                    authentication-failure-url="/login.jsp?error=true"
+                    authentication-failure-url="/403.jsp"
                     username-parameter = "j_username"
                     password-parameter=  "j_password"
         />

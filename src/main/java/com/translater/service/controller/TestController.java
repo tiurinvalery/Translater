@@ -15,11 +15,18 @@ public class TestController {
     @Value("${welcome.message:test}")
     private String message = "Hello World";
 
-    @RequestMapping("/test")
+    @RequestMapping("/welcome")
     public String welcome(Map<String, Object> model) {
+        model.put("message", this.message);
+        return "welcome";
+    }
+
+    @RequestMapping("/start")
+    public String login(Map<String, Object> model) {
         model.put("message", this.message);
         return "rootPage";
     }
+
 
 
 
