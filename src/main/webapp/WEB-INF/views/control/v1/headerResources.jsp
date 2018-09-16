@@ -6,12 +6,12 @@
   Your code is for human first, than for computer only
 --%>
 <%@ page language="java" contentType="text/html; charset=utf8"
-         pageEncoding="utf8"%>
-<%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+         pageEncoding="utf8" %>
+<%@taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 <head>
 
     <meta charset="utf-8">
@@ -45,17 +45,28 @@
     <!-- DataTables CSS -->
     <link href="/resources/html_data/vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/autofill/2.2.2/css/autoFill.dataTables.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.4.2/css/buttons.dataTables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/colreorder/1.4.1/css/colReorder.dataTables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/fixedheader/3.1.3/css/fixedHeader.dataTables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/keytable/2.3.2/css/keyTable.dataTables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.0/css/responsive.dataTables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowgroup/1.0.2/css/rowGroup.dataTables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowreorder/1.2.3/css/rowReorder.dataTables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/1.4.3/css/scroller.dataTables.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/select/1.2.3/css/select.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/autofill/2.2.2/css/autoFill.dataTables.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/buttons/1.4.2/css/buttons.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/colreorder/1.4.1/css/colReorder.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/fixedheader/3.1.3/css/fixedHeader.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/keytable/2.3.2/css/keyTable.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/responsive/2.2.0/css/responsive.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/rowgroup/1.0.2/css/rowGroup.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/rowreorder/1.2.3/css/rowReorder.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/scroller/1.4.3/css/scroller.dataTables.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.datatables.net/select/1.2.3/css/select.dataTables.min.css"/>
 
     <!-- DataTables Responsive CSS -->
     <link href="/resources/html_data/vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">

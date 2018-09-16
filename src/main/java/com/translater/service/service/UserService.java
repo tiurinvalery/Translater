@@ -5,4 +5,8 @@ import com.translater.service.model.user.User;
 public interface UserService {
 
     User getUserByLoginAndPassword(String login, String password);
+
+    User getUserByUsername(String user);
+
+    User getCurrentLogInUser();
 }
